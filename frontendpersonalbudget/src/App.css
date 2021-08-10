@@ -1,0 +1,389 @@
+/*--------------------------------------- Variables ---------------------------------------------*/
+:root{
+    --bottom: 20px;
+    --black: #000000; 
+    --blue: #202062;
+    --dark-blue: #1e1f26;
+    --green: #01e37f;
+    --light-200-green: #cff4d2;
+    --light-500-green: #7be495;
+    --light-700-green: #56c596;
+    --lightblue: #329d9c;
+    --light-700-blue: #6495ed;
+    --lightblack: #464242;
+    --lightwine: #c5b68c;
+    --pinkwine: #642121; 
+    --success: #3fee3b;
+    --red: #ff3f40; 
+    --warning: #f32a23;
+    --whitewine: #f3f2de;
+    --white: #f0f0f0;
+}
+/*--------------------------------------- Generales ---------------------------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background: linear-gradient(180deg, var(--light-200-green) 12%, var(--light-500-green) 62%);
+    font-family: 'Mate SC', 'Shadows Into Light', Impact, sans-serif, cursive;
+    min-height: 100vh;
+}
+/* Navbar */
+.navbar{
+    background-color: transparent;
+    margin-bottom: var(--bottom);
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.list-item{
+    flex-grow: 1;
+    text-align: center;
+}
+.list-item-link{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    color: var(--blue);
+    font-size: 18px;
+}
+.list-item-link:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+/* -------------------------------------- Contenedor ------------------ */
+.container{
+    background-color: transparent ;
+    max-width: 100%;
+    margin-bottom: var(--bottom);
+}
+/*--------------------------------------------- Subtitle ----------------------------------------------------*/
+.header-subtitle{
+    background-color: transparent;
+    padding: 10px 0;
+}
+.subtitle-list{
+    list-style: none;
+    display: flex;
+    text-align: end;
+    align-items: center;
+}
+.subtitle-item{
+    flex-grow: 1;
+}
+.subtitle-item-link{
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--blue);
+}
+.link-v-m:hover{
+    color: var(--black);
+    font-weight: bold;
+}
+/*----------------------------------------------------------------- Table ----------------------------------------------*/
+.table{
+    margin: 10px auto;
+    text-align: center;
+    width: 75em;
+}
+.thead {
+    background-color: var(--light-700-green);
+}
+.tbody:nth-of-type(2n+1) {
+    background-color: var(--light-200-green);
+}
+.th, .td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px;
+}
+/* ----------- Varios ------------------------------------------------------------------------------------*/
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+.contact-item-link, .social-item-link{
+    text-decoration: none;
+}
+.img-contact{
+    margin: 5px;
+}
+.table{
+  width: 64em;
+}
+.balance {
+  width: 30em;
+  margin: 10px auto;
+  background-color: var(--light-200-green);
+  padding: 10px;
+}
+.text-dark {
+    color: var(--black);
+}
+.text-success{
+  color: var(--success);
+}
+.text-warning{
+  color: var(--warning);
+}
+.list-balance {
+  font-size: 1.4em;
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+.img-arrow {
+  width: 1.4em;
+  margin: auto 20px;
+}
+.breadcrumbs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--bottom);
+}
+/* --------- Panel de administracion ---------------------------------------------------*/
+.subtitle-item-admin{
+    text-align: center;
+}
+/*-------- Botones --------------------------------------------------------------------------------------------*/
+.add-product{
+    text-align: center;    
+    margin-bottom: 20px;
+}
+.btn{
+    border-radius: 8px;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+.btn-edit{
+    background-color: var(--green);
+    color: var(--black);
+}
+.btn-delete{
+    background-color: var(--red);
+    color: var(--black);
+}
+.btn-add{
+    background-color: var(--light-700-blue);
+    color: var(--black);
+    font-weight: bold;
+}
+.btn-products{
+    background-color: var(--light-700-blue);
+    border: 0;
+    color: var(--black);
+    font-size: 1em;
+    width: 7em;
+}
+.btn-buy{
+    background-color: var(--lightblue);
+    border: 0;
+    color: var(--black);
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin: 5px auto;
+    width: 7em;
+}
+.btn-inicio{
+  background-color: var(--blue);
+  border-radius: 20px;
+  border: none;
+  color: var(--white);
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 10px 5px;
+  text-transform: uppercase;
+}
+.btn-inicio:hover{
+  background-color: var(--gray);
+  color: var(--black);
+}
+/* ------------------------------ Formularios ------------------------------------------------------------- */
+.form-group {
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 10px auto;
+    width: 40em;
+}
+.form-group-6, .form-group-12 {
+    padding: 0 15px;
+}
+.form-group-6{
+    width: 50%;
+}
+.form-group-12{
+    width: 100%;
+}
+.form-label{
+    display: inline-block;
+    margin: 10px 0;
+}
+.form-control{
+    background: #e6e6e6;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    padding: 10px 5px;
+    margin-bottom: var(--margin-bottom);  
+    width: 100%;  
+}
+.form-news{
+  display: inline-block;
+  font-size: 0;
+}
+.form-news-input, .form-news-btn{
+  min-height: 32px;
+  border-radius: 5px;
+}
+.form-news-btn{
+  padding: 0 10px;
+  background-color: var(--whitewine);
+  color: var(--black);
+  font-weight: bold;
+  border: 1px solid var(--whitewine);
+}
+/* ------------------------------ Margenes y padding -------------------------------------------------*/
+.mt-1{
+    margin: 10px auto;
+    width: 50%;
+}
+.py-2{
+    padding: 10px 0;
+}
+.px-2{
+    padding: 0 10px;
+}
+/* ---------------------------------------- Footer ---------------------------------------------------------------------- */
+.footer{
+    background-color: var(--light-700-green);
+    font-size: 1.4em;
+}
+.card-text{
+    text-align: center;
+}
+/* ---------------------------------------- Media queries -------------------------------------------- */
+@media (max-width: 1023px){
+    /* Skip navigation */
+    .header{
+        display: none;
+    }
+    /*------------------------------------- Footer ----------------------------------------*/
+    .footer{
+        gap: 15px;
+    }
+    /*------------------------------------- Formulario ----------------------------------------*/
+    .form-news-btn{
+        margin: 5px auto;
+    }   
+    /*------------------------------------- Admin ----------------------------------------*/
+    table{
+      width: 100%;
+    } 
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+  }
+    .balance{
+      width: 100%;
+    }
+}
+@media (max-width: 767px){
+    body{
+        font-family: 'Teko', Impact, sans-serif, cursive;
+    }
+    .table{
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    /*------------------------------------- Nav ----------------------------------------------*/
+    
+    .form-group{
+      width: 100%;
+    }
+    
+    .list-item-link{
+        font-size: 1.4em;
+    }    
+    .breadcrumbs, .filter-btn{
+        display: block;
+    }
+    .mostrarFiltro{
+        display: block;
+        position: absolute;
+        background-color: var(--lightblue);
+        margin: -25px 20px;
+        padding: 5px;
+    }
+    .filter-btn{
+        margin: auto 20px;
+        padding: 10px 0;
+    }
+    .btn-filter{
+        padding: 0 10px;
+        background-color: var(--lightblue);
+        color: var(--black);
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid var(--lightblue);
+        transform: skewX(-20deg);
+        box-shadow: -2px 10px 20px -6px rgb(0,25,14);
+        font-family: 'Shadows Into Light', Impact, sans-serif, cursive;
+    }
+    
+    /*------------------------------------- Footer ----------------------------------------*/
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }       
+}
+@media (max-width: 400px) {
+    .table{
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    /* ------------------------------ Subtitle ----------------*/
+    .subtitle-list{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    /*------------------------------------- Footer ----------------------------------------------*/
+    .list-item{
+        min-width: 100%;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+          
+}
+@media (max-width: 374px){
+    /*------------------------------------- Footer ----------------------------------------------*/
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+    /*------------------------------------- Formularios ----------------------------------------*/
+    .form-news{
+        margin: auto 30px;        
+    }
+    .form-news-btn{
+        margin-left: 10px;
+    }
+}
